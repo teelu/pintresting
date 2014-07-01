@@ -8,7 +8,7 @@
         <br>
         <%= pin.description %>
         <br>
-        <%= pin.user.try(:email) %>
+        <%= pin.user.try(:name) %>
         <% if pin.user == current_user %>
         <div class="actions">
         <%= link_to edit_pin_path(pin) do %> 
